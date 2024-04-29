@@ -1,0 +1,527 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", Sans-serif;
+}
+
+.fundo {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1.5)), url(image/certoo.jpg);
+  height: 100vh;
+}
+
+/* Estilos comuns */
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.logo {
+  font-family: "Sora", Sans-serif;
+  color: white;
+  font-weight: 600;
+}
+
+.logo h1 span {
+  color: #186f87;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #868686;
+  text-decoration: underline 0.1em;
+}
+
+#contato-btn {
+  background-color: #1a7691;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contato-btn:hover {
+
+  background-color: #1e8aa8;
+  /* Cor ao passar o mouse */
+}
+
+.texto-escrevendo {
+  overflow: hidden;
+  white-space: pre-wrap;
+  /* Quebra o texto conforme necessário */
+  width: 20%;
+  font-family: "Sora", Sans-serif;
+  font-weight: 600;
+  color: white;
+  margin-top: 10%;
+  margin-left: 44%;
+}
+
+.escrevndoSO {
+  padding: 20px;
+}
+
+.nav ul {
+  position: fixed;
+  display: flex;
+  margin-left: 37%;
+  margin-top: -1%;
+  gap: 20%;
+  list-style-type: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #1a7691;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 3s;
+}
+
+.hidden2 {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(0%);
+  transition: all 2s;
+}
+
+.show2 {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 3s;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  height: 100vh;
+}
+
+.fundoSection {
+  background: #0f4555;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgb(15, 69, 85));
+}
+
+.hidden h2 {
+  z-index: 2;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 50px;
+  padding: 3%;
+  margin-top: -20%;
+  height: 40ch;
+  width: 70%;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgb(0, 0, 0, 0.75));
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+.logos :nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.logos :nth-child(3) {
+  transition-delay: 700ms;
+}
+
+.logos :nth-child(4) {
+  transition-delay: 1000ms;
+}
+
+.logos :nth-child(5) {
+  transition-delay: 1200ms;
+}
+
+.logos :nth-child(6) {
+  transition-delay: 1500ms;
+}
+
+
+
+
+.FotoEtexto .MoverFoto {
+  margin-left: 15%;
+}
+
+.Mfoto {
+  transform: translate(-50%, -30%);
+  animation: flutuacao 4s ease-in-out infinite;
+  border-radius: 8%;
+}
+
+@keyframes flutuacao {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.FotoEtexto {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.FotoEtexto h1 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: pre-wrap;
+  font-family: "Sora", Sans-serif;
+  font-weight: 200;
+  color: white;
+  width: 40%;
+  height: 20ch;
+  margin-top: -5%;
+}
+
+.logos .hidden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+  .fundo {
+    width: 100%;
+    background-position: -450px;
+  }
+
+  header {
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 10px;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .logo {
+    font-size: 9px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 10px;
+  }
+
+  #typed-text {
+    font-size: 29px;
+    margin-left: 10%;
+    margin-top: -10%;
+  }
+
+  .escrevndoSO {
+    font-size: 10px;
+    margin-left: -18%;
+    margin-top: -8%;
+  }
+
+  #contato-btn {
+    background-color: #1a7691;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 10px;
+  }
+
+  .texto-escrevendo {
+    overflow: hidden;
+    white-space: pre-wrap;
+    /* Quebra o texto conforme necessário */
+    width: 50%;
+    font-family: "Sora", Sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    margin-top: 63%;
+    margin-left: 35%;
+  }
+
+
+  .FotoEtexto .MoverFoto {
+    margin-left: 10%;
+  }
+
+  .Mfoto {
+    width: 160px;
+  }
+
+  .FotoEtexto {
+    display: flex;
+    align-items: center;
+    gap: 7%;
+  }
+
+  .FotoEtexto h1 {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: pre-wrap;
+    font-family: "Sora", Sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+    width: 45%;
+    height: 30ch;
+    margin-top: -5%;
+  }
+
+  .logos {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 3%;
+    margin-top: -40%;
+    height: 20ch;
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgb(0, 0, 0, 0.75));
+    width: 240px;
+    z-index: 1;
+  }
+
+  .avatar {
+    width: 50%;
+  }
+
+  .tecnologias .logos .hidden p {
+    font-size: 10px;
+  }
+
+  .tecnologias .hidden h2 {
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 380px) {
+
+  .fundo {
+    width: 100%;
+    background-position: -480px;
+  }
+
+  header {
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 5px;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .logo {
+    font-size: 9px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 8.3px;
+  }
+
+  #typed-text {
+    font-size: 29px;
+    margin-left: 10%;
+    margin-top: -10%;
+  }
+
+  .escrevndoSO {
+    font-size: 10px;
+    margin-left: -20%;
+    margin-top: -20%;
+  }
+
+  #contato-btn {
+    background-color: #1a7691;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 9px;
+  }
+
+  .texto-escrevendo {
+    overflow: hidden;
+    white-space: pre-wrap;
+    /* Quebra o texto conforme necessário */
+    width: 50%;
+    font-family: "Sora", Sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    margin-top: 63%;
+    margin-left: 35%;
+  }
+
+
+  .FotoEtexto .MoverFoto {
+    margin-left: 7%;
+  }
+
+  .Mfoto {
+    width: 160px;
+  }
+
+  .FotoEtexto {
+    display: flex;
+    align-items: center;
+    gap: 7%;
+  }
+
+  .FotoEtexto h1 {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: pre-wrap;
+    font-family: "Sora", Sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+    width: 40%;
+    height: 30ch;
+    margin-top: -5%;
+  }
+
+  .logos {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 3%;
+    margin-top: -40%;
+    height: 20ch;
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgb(0, 0, 0, 0.75));
+    width: 240px;
+    z-index: 1;
+  }
+
+  .avatar {
+    width: 50%;
+  }
+
+  .tecnologias .logos .hidden p {
+    font-size: 10px;
+  }
+
+  .tecnologias .hidden h2 {
+    font-size: 15px;
+  }
+
+}
+
+
+/* Estilos para o modo escuro 
+.dark-mode body {
+  background-color: #000000;
+  color: #ddd;
+}
+
+.dark-mode header {
+  background-color: #000000;
+}
+
+.dark-mode nav ul li a {
+  color: #ddd;
+}
+
+.dark-mode #contato-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.dark-mode #contato-btn:hover {
+  background-color: #0056b3;
+  
+}
+
+.dark-mode main {
+  background-color: #000000;
+}
+
+.dark-mode #apresentacao {
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+}
+
+.dark-mode .texto h1 {
+  color: #ddd;
+}
+
+.dark-mode .texto p {
+  color: #ccc;
+}
+
+.dark-mode #tecnologias {
+  background-color: #000000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode #tecnologias h2 {
+  color: #ddd;
+}
+
+.dark-mode #tecnologias ul li {
+  color: #ccc;
+}
+*/
